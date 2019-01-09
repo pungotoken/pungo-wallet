@@ -1,0 +1,494 @@
+$accent-color: #ed5823;
+.send-ui {
+  margin: 0 auto;
+  max-width: 375px;
+  min-height: calc(100vh - 174px);
+  padding: 140px 26px 0;
+  position: relative;
+  @media only screen and (max-width: 375px) {
+    padding: 140px 5px 0;
+  }
+  .buttons-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+
+    .button-left {
+      width: 50px;
+      margin-right: 30px;
+    }
+    .button-right {
+      width: 50px;
+      margin-left: 30px;
+    }
+    .button-center {
+      width: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .button-center:first-child {
+      margin-right: 20px;
+    }
+  }
+  .steps-container {
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    top: 120px;
+    width: 40px;
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+  .form.send {
+    //@media only screen and (max-width: 360px) {
+    //  margin-bottom: 30px;
+    //}
+    .send-step{
+      margin-bottom: 30px;
+    }
+    .send-step1 {
+      text-align: center;
+      margin-top: 10px;
+
+      .section-label {
+        color: #ED512B;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .wallet-balance-details {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: 40px;
+        padding: 3px;
+        font-weight: bold;
+        span {
+          font-weight: normal;
+        }
+        .wallet-coin-balance,
+        .wallet-coin-balance-usd {
+          text-align: center;
+          color: #9B9B9B;
+          margin-top: -16px;
+        }
+        .wallet-coin-balance {
+          font-size: 22px;
+          color: #ffffff;
+          margin: 0;
+        }
+      }
+
+      .sender-details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        line-height: 40px;
+        border: 3px solid #5D5D5D;
+        position: relative;
+        margin: 20px auto 0;
+        .label {
+          color: #ED512B;
+          line-height: initial;
+          left: 15px;
+          position: absolute;
+          top: -20px;
+        }
+
+        .address, .balance {
+          word-break: break-word;
+          position: relative;
+          .value {
+            background-color: #1A1A1A;
+            text-align: center;
+          }
+        }
+        .address {
+          border-right: 3px solid #5D5D5D;
+          flex-grow: 1;
+        }
+        .balance {
+          width: 75px;
+          @media only screen and (max-width: 360px) {
+            width: 50px
+          }
+          .label {
+            @media only screen and (max-width: 360px) {
+              left: -3px;
+            }
+          }
+        }
+      }
+      .receiver-details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 12px;
+        line-height: 40px;
+        border: none;
+        text-align: center;
+        margin: 0 auto;
+        .form-control {
+          background-color: #1A1A1A;
+          border: 0;
+          width: 100%;
+          color: #fff;
+          flex-grow: 1;
+          font-family: 'Montserrat', Helvetica, Arial, serif;
+          line-height: 38px;
+          border-right: none;
+          outline: none;
+          text-align: center;
+        }
+      }
+      .transaction-amount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        .converter-wrapper {
+          position: relative;
+          flex-direction: column;
+          background-color: #1a1a1a;
+        }
+        .form-control {
+          margin: 0;
+          width: 100%;
+          background-color: transparent;
+          line-height: 44px;
+          text-align: center;
+          flex-grow: 1;
+          border: none;
+          color: #fff;
+          font-size: 34px;
+          font-weight: bold;
+          outline: none;
+          font-family: 'Montserrat', Helvetica, Arial, serif;
+        }
+        .form-control-usd {
+          margin: 0;
+          width: 100%;
+          background-color: transparent;
+          text-align: center;
+          flex-grow: 1;
+          border: none;
+          color: #5D5D5D;
+          font-size: 26px;
+          font-weight: bold;
+          outline: none;
+          font-family: 'Montserrat', Helvetica, Arial, serif;
+        }
+        .current-coin-label {
+          position: absolute;
+          top: 4px;
+          right: 16px;
+          font-size: 30px;
+          font-weight: bold;
+        }
+        .base-coin-label {
+          position: absolute;
+          color: #5D5D5D;
+          top: 46px;
+          right: 18px;
+          font-size: 26px;
+          font-weight: bold;
+        }
+
+        .approximately-label {
+          position: absolute;
+          color: #5D5D5D;
+          top: 44px;
+          left: 16px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        input::placeholder {
+          color: #fff;
+          font-size: 34px;
+          font-family: 'Montserrat', Helvetica, Arial, serif;
+        }
+
+        input.form-control-usd::placeholder {
+          color: #5D5D5D;
+          font-size: 22px;
+          font-family: 'Montserrat', Helvetica, Arial, serif;
+        }
+        .send-all-label {
+          text-transform: uppercase;
+          text-align: center;
+          padding: 30px 10px;
+          font-size: 14px;
+          font-weight: bold;
+          margin-right: 3px;
+        }
+      }
+      .btc-transaction-fee {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        .fee-select {
+          border: 0;
+          color: #fff;
+          min-height: 46px;
+          display: flex;
+          align-items: center;
+          outline: none;
+        }
+      }
+      .send-step-btn-container {
+        background-color: #ED512B;
+        color: white;
+        font-family: 'Montserrat-Light', Helvetica, Arial, serif;
+        height: 46px;
+        width: 90px;
+        display: block;
+        font-size: 14px;
+        line-height: 46px;
+        text-align: center;
+        margin: 100px auto 0;
+        img {
+          height: auto;
+          width: 22px;
+          margin-right: 5px;
+          vertical-align: middle;
+        }
+      }
+      .selectWrapper {
+        text-align: center;
+        position: relative;
+      }
+      .select-label {
+        text-align: center;
+        font-family: 'Montserrat';
+        //margin-left: calc(18%);
+        //margin-bottom: 5px;
+        text-transform: lowercase;
+        color: #f15a24;
+        font-weight: 600;
+        font-size: 13px;
+      }
+      select {
+        display: inline-block;
+        color: #fff;
+        position: relative;
+        width: 70%;
+        vertical-align: middle;
+        background-color: transparent;
+        max-height: 80px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 0;
+        font-weight: bold;
+        outline: none;
+        text-align: center;
+        text-align-last: center;
+        background-image:url('/images/dropdown_arrow_icon_white.svg');
+        background-position:
+                calc(100% - 20px) calc(1em + 2px),
+                calc(100% - 15px) calc(1em + 2px),
+                100% 0;
+        background-size:
+                15px 15px,
+                5px 5px,
+                2.5em 2.5em;
+        background-repeat: no-repeat;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+      }
+      select option:hover, select option:hover {
+        box-shadow: 0 0 10px 100px #666666 inset;
+      }
+      select:focus > option:checked {
+        background: #666666 !important;
+      }
+      select option {
+        font-weight: bold;
+        color: #fff;
+        background-color: #1a1a1a;
+      }
+    }
+    .send-step2 {
+      .receiver-address,
+      .send-amount,
+      .transaction-fee,
+      .transaction-total {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .send-amount,
+      .transaction-fee,
+      .transaction-total {
+        line-height: 46px;
+        strong {
+          padding-right: 5px;
+        }
+      }
+      .section-label {
+        color: #ED512B;
+        text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .receiver-address {
+        border: none;
+        font-size: 12px;
+        line-height: 40px;
+      }
+      .send-amount {
+        color: #7F7F7F;
+        font-size: 20px;
+      }
+      .transaction-fee {
+        color: #7F7F7F;
+        font-size: 20px;
+      }
+      .transaction-total {
+        font-size: 34px;
+        color: #ffffff;
+      }
+      .pin-confirm {
+        display: block;
+        .form-control {
+          margin: 0;
+          width: 100%;
+          background-color: #1A1A1A;
+          line-height: 44px;
+          border: 0;
+          text-align: center;
+          color: #fff;
+          font-size: 18px;
+          outline: none;
+          font-family: 'Montserrat', Helvetica, Arial, serif;
+        }
+      }
+    }
+    .send-step3 {
+      margin-top: 10px;
+      .sender-address,
+      .receiver-address,
+      .transaction-total,
+      .transaction-fee,
+      .send-amount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .sender-address,
+      .receiver-address {
+        border: none;
+        font-size: 12px;
+        line-height: 40px;
+      }
+      .section-label {
+        color: #ED512B;
+        text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .sender-address {
+
+      }
+      .receiver-address {
+
+      }
+      .transaction-total {
+        font-size: 34px;
+      }
+      .transaction-fee {
+        color: #7F7F7F;
+        font-size: 20px;
+      }
+      .send-amount {
+        line-height: 46px;
+        font-size: 28px;
+        strong {
+          padding-right: 5px;
+        }
+      }
+      .transactions-list {
+        .success {
+          color: #8ecc60 !important;
+          padding-left: 0;
+          text-transform: capitalize;
+        }
+        .item {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 12px;
+          height: 25px;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          margin-left: 30px;
+          margin-right: 30px;
+
+          .transaction-direction {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            width: 65px;
+            font-size: 12px;
+            line-height: 25px;
+            .transaction-arrow {
+              display: block;
+              width: 15px;
+              max-width: 15px;
+              height: auto;
+              margin: 0 7px;
+            }
+          }
+          &.sent {
+            .direction,
+            .amount-native {
+              color: #fff;
+            }
+
+            .transaction-direction {
+            }
+          }
+          .date {
+            flex-grow: 1;
+            text-align: center;
+          }
+          .amount-native {
+            width: 75px;
+            height: 21px;
+            line-height: 21px;
+            text-align: center;
+            font-weight: bold;
+          }
+
+          .right-arrow {
+            line-height: 25px;
+            text-align: center;
+            width: 30px;
+            img {
+              max-width: 4px;
+            }
+          }
+        }
+      }
+    }
+    .error {
+      margin-top: 5px;
+    }
+  }
+}

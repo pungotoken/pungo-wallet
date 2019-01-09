@@ -1,0 +1,3 @@
+[submodule ".docker/mongodb"]
+	path = .docker/mongodb
+	url = ../mongodb.git

@@ -1,0 +1,209 @@
+.overview-ui {
+  background-color: #1A1A1A;
+  min-height: calc(100vh - 164px);
+  padding: 60px 10px 0;
+  height: 100%;
+  .loader {
+    float: unset;
+    right: 50%;
+    margin-right: -50px;
+    width: 100px;
+    height: 100px;
+  }
+  .home-inner {
+    max-width: 375px;
+    position: relative;
+    margin: auto;
+  }
+
+  .home {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 100%;
+    position: relative;
+    overflow: visible;
+    margin: 0;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .coins-container {
+      margin: 0 15px 90px;
+      .overview-coin {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+        margin: 20px 20px;
+        .coin-icon {
+          display: flex;
+          flex: 1 0 0;
+          margin-left: 32px;
+          flex-direction: column;
+          justify-content: start;
+          height: 50px;
+          align-items: center;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+          span {
+            color: #5D5D5D;
+            padding-top: 2px;
+          }
+        }
+
+        .coin-details {
+          display: flex;
+          text-align: end;
+          justify-content: end;
+          flex-direction: column;
+          flex: 3 0 0;
+          padding: 3px;
+          margin-right: 30px;
+          font-weight: bold;
+          span {
+            font-weight: normal;
+          }
+          .coin-balance,
+          .coin-balance-usd,
+          .coin-balance-rate {
+            text-align: end;
+            font-size: 16px;
+            overflow-x: scroll;
+            max-width: 156px;
+            padding: 0 5px;
+            white-space: nowrap;
+          }
+          .coin-balance {
+            font-size: 22px;
+          }
+          .coin-balance-rate {
+            color: #4C4C4C;
+          }
+        }
+      }
+    }
+
+    .total-coins {
+      font-family: 'Montserrat-Light', Helvetica, Arial, serif;
+      font-weight: bold;
+      margin: 16px 16px 16px;
+      .yourcoins {
+        color: #ED512B;
+        font-size: 12px;
+        padding-left: 15px;
+      }
+      .coins-value {
+        line-height: 46px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        span {
+          font-family: 'Montserrat-ExtraLight', Helvetica, Arial, serif;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .buttons-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 30px;
+
+      .button-left {
+        width: 50px;
+        margin-right: 30px;
+      }
+      .button-right {
+        width: 50px;
+        margin-left: 30px;
+      }
+      .button-center {
+        width: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+
+    .rectangle9 {
+      top: 0;
+      height: 100%;
+      width: 375px;
+      position: absolute;
+      margin: 0;
+      left: 0;
+    }
+
+    .div1 {
+      opacity: 0.1;
+      position: absolute;
+      margin-top: 80px;
+    }
+
+    .path5 {
+      padding-top: 50px;
+      height: 6px;
+      width: 10px;
+      position: absolute;
+      margin: 0;
+      left: 340px;
+    }
+
+    .combinedshape {
+      top: 45px;
+      height: 14px;
+      width: 20px;
+      position: absolute;
+      margin: 0;
+      left: 20px;
+    }
+
+    .home .portfolio {
+      top: 42px;
+      height: auto;
+      width: auto;
+      position: absolute;
+      margin: 0;
+      left: 153px;
+      font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+      font-size: 18px;
+      color: #fff;
+      text-align: left;
+      letter-spacing: -0.56px;
+      line-height: 22px;
+    }
+
+    .combinedshape1 {
+      top: 41px;
+      height: 22px;
+      width: 20px;
+      position: absolute;
+      margin: 0;
+      left: 333px;
+    }
+
+    .oval1 {
+      top: 40px;
+      height: 8px;
+      width: 8px;
+      position: absolute;
+      margin: 0;
+      left: 347px;
+    }
+
+    .combinedshape2 {
+      top: 312px;
+      height: 26px;
+      width: 26px;
+      position: absolute;
+      margin: 0;
+      left: 331px;
+    }
+  }
+}

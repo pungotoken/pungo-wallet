@@ -1,0 +1,18 @@
+.receive-qr {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  background: none;
+  width: 345px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+
+  .text-center {
+    margin-top: 30px;
+  }
+
+  canvas {
+    border: 10px solid white;
+  }
+}
