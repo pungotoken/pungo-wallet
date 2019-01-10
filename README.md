@@ -1,3 +1,4 @@
+![Pungo Token](https://i.ibb.co/T0cFLpx/token-regular-small.png)
 
 # Pungo Wallet
 
@@ -5,6 +6,13 @@ _This readme is WIP_
 
 Mobile wallet implementation.
 
+## Development Resources
+
+- PungoToken Website: [https://pungotoken.com](https://pungotoken.com/)
+- PungoToken Blockexplorer: [https://explorer.pungotoken.build](https://explorer.pungotoken.com)
+- PungoToken Telegram: [https://t.me/pungotalk](https://t.me/pungotalk)
+- PungoToken Node Addresses:  190.114.254.103, 190.114.254.104
+- PungoToken Electrum Servers Addresses: agama.komodo.build:10001 agama2.komodo.build:10001
 
 ## On development process
 
@@ -12,21 +20,7 @@ We should limit the number of changes in existing code in `imports` folder to ke
 
 Instead we should create and import code in new files.
 
-
-## How to setup development environment
-
-### Adding required code
-
-To build an app or to run a web version you should add required information to code:
-
-- add electrum servers to `./imports/ui/conf/electrum-servers.js` file;
-- add proxy server for Electrum server to `./imports/ui/actions/proxyServer.js` file;
-- add some access rules if needed for your resources for Meteor to `./mobile-config.js` file;
-- if you need coin price provider / price converter (for examlpe www.atomicexplorer.com)- add it to `./imports/ui/actions/actions.js`
-
-### Setup for local development of web browser version
-
-Local development for browser version, with live reload on changes.
+## Dependencies
 
 Required software:
 
@@ -48,6 +42,21 @@ npm install npm@latest -g
 # install meteor
 curl https://install.meteor.com/ | sh
 ```
+
+## How to setup development environment
+
+### Adding required code
+
+To build an app or to run a web version you should add required information to code:
+
+- add electrum servers to `./imports/ui/conf/electrum-servers.js` file;
+- add proxy server for Electrum server to `./imports/ui/actions/proxyServer.js` file;
+- add some access rules if needed for your resources for Meteor to `./mobile-config.js` file;
+- if you need coin price provider / price converter (for examlpe www.atomicexplorer.com)- add it to `./imports/ui/actions/actions.js`
+
+### Setup for local development of web browser version
+
+Local development for browser version, with live reload on changes.
 
 Setup repository and start live development of web browser version:
 
