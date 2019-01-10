@@ -9,18 +9,14 @@ Mobile wallet implementation.
 ## Development Resources
 
 - PungoToken Website: [https://pungotoken.com](https://pungotoken.com/)
-- PungoToken Blockexplorer: [https://explorer.pungotoken.build](https://explorer.pungotoken.com)
+- PungoToken Blockexplorer: [https://explorer.pungotoken.com](https://explorer.pungotoken.com)
 - PungoToken Telegram: [https://t.me/pungotalk](https://t.me/pungotalk)
 - PungoToken Node Addresses:  190.114.254.103, 190.114.254.104
-- PungoToken Electrum Servers Addresses: agama.komodo.build:10001 agama2.komodo.build:10001
+- PungoToken Electrum Servers Addresses: electrum1.pungo.cloud:10002 electrum2.pungo.cloud:10002
 
-## On development process
+## Getting started
 
-We should limit the number of changes in existing code in `imports` folder to keep general source code in sync with original repository.
-
-Instead we should create and import code in new files.
-
-## Dependencies
+### Dependencies
 
 Required software:
 
@@ -43,7 +39,14 @@ npm install npm@latest -g
 curl https://install.meteor.com/ | sh
 ```
 
+
 ## How to setup development environment
+
+### On development process
+
+We should limit the number of changes in existing code in `imports` folder to keep general source code in sync with original repository.
+
+Instead we should create and import code in new files.
 
 ### Adding required code
 
