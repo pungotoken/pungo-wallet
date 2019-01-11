@@ -31,22 +31,8 @@ App.launchScreens({
 });
 
 // meteor rules
-App.accessRule('...');
-App.accessRule('...');
-App.accessRule('...');
-
 App.accessRule('https://fonts.gstatic.com');
 App.accessRule('https://www.youtube.com');
-App.accessRule('...');
-App.accessRule('...');
-
-App.accessRule('...');
-App.accessRule('...');
-App.accessRule('...');
-App.accessRule('...');
-App.accessRule('...');
-
-App.accessRule('...');
 
 // youtube image cdns
 App.accessRule('https://youtube.com');
@@ -54,17 +40,11 @@ App.accessRule('https://i.ytimg.com');
 App.accessRule('https://s.ytimg.com');
 
 // electrum endpoints
-App.accessRule('...');
-App.accessRule('...');
-
-// PGT
-App.accessRule('...');
+App.accessRule('<add your electrum endpoints here>');
 
 // Electrum Proxy Servers
-App.accessRule('...');
-App.accessRule('...');
-App.accessRule('...');
-App.accessRule('...');
+App.accessRule('<add your electrum proxy server here>');
+
 // atomic explorer
 App.accessRule('https://www.atomicexplorer.com');
 
@@ -72,6 +52,8 @@ App.accessRule('https://www.atomicexplorer.com');
 // KMD
 App.accessRule('https://www.kmdexplorer.io');
 App.accessRule('https://kv.kmdexplorer.io');
+// PGT
+App.accessRule('<add block explorer for PGT here>');
 // UTRUM
 App.accessRule('http://explorer.utrum.io');
 // Blocnation Token
