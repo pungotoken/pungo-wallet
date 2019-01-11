@@ -50,11 +50,13 @@ Instead we should create and import code in new files.
 
 ### Adding required code
 
-To build an app or to run a web version you should add required information to code:
+To build an app or to run a web version you should add required information to code. At the moment this 
+information is replaced by three dots: '...'
 
 - add electrum servers to `./imports/ui/conf/electrum-servers.js` file;
 - add proxy server for Electrum server to `./imports/ui/actions/proxyServer.js` file;
 - add some access rules if needed for your resources for Meteor to `./mobile-config.js` file;
+- add meteor token id (instaed of 'tobeset') to `.meteor/.id` file;
 - if you need coin price provider / price converter (for examlpe www.atomicexplorer.com)- add it to `./imports/ui/actions/actions.js`
 
 ### Setup for local development of web browser version

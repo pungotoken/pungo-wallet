@@ -1,8 +1,8 @@
 App.info({
-  id: 'whitelabelid',
-  version: 'versionid',
-  buildNumber: 'buildid',
-  name: 'walletname',
+  id: '...',
+  version: '...',
+  buildNumber: '...',
+  name: '...',
   description: '...',
   author: '...',
   email: '...',
@@ -40,10 +40,10 @@ App.accessRule('https://i.ytimg.com');
 App.accessRule('https://s.ytimg.com');
 
 // electrum endpoints
-App.accessRule('<add your electrum endpoints here>');
+App.accessRule('...');
 
 // Electrum Proxy Servers
-App.accessRule('<add your electrum proxy server here>');
+App.accessRule('...');
 
 // atomic explorer
 App.accessRule('https://www.atomicexplorer.com');
@@ -52,8 +52,6 @@ App.accessRule('https://www.atomicexplorer.com');
 // KMD
 App.accessRule('https://www.kmdexplorer.io');
 App.accessRule('https://kv.kmdexplorer.io');
-// PGT
-App.accessRule('<add block explorer for PGT here>');
 // UTRUM
 App.accessRule('http://explorer.utrum.io');
 // Blocnation Token
