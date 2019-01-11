@@ -2,7 +2,7 @@
 
 
 const proxyServers = [{
-  ip: '....',
+  ip: '<type your proxy server IP here>',
   port: 80,
 }];
 
