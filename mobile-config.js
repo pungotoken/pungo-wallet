@@ -39,12 +39,6 @@ App.accessRule('https://youtube.com');
 App.accessRule('https://i.ytimg.com');
 App.accessRule('https://s.ytimg.com');
 
-// electrum endpoints
-App.accessRule('...');
-
-// Electrum Proxy Servers
-App.accessRule('...');
-
 // atomic explorer
 App.accessRule('https://www.atomicexplorer.com');
 
