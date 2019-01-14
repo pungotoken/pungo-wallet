@@ -1,0 +1,104 @@
+.form.server-select {
+  text-align: center;
+
+  .group3 {
+    top: 0;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+
+    .fa {
+      font-size: 20px;
+      position: relative;
+      top: -4px;
+    }
+  }
+  .server-select-inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+}
+
+.icon-btn {
+  border: 0;
+  color: #fff;
+  margin-top: 20px;
+  text-transform: uppercase;
+  display: flex;
+  padding: 0 16px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  height: 46px;
+  outline: none;
+  background-color: #5D5D5D;
+
+  .icon-btn-image {
+    margin-right: 6px;
+    width: 24px;
+    height: 24px;
+    padding-right: 10px;
+  }
+}
+
+.server-form-control {
+  background-color: #1A1A1A;
+  color: #fff;
+  display: flex;
+  justify-content:center;
+  font-family: 'Montserrat', Helvetica, Arial, serif;
+  line-height: 38px;
+  outline: none;
+
+  select {
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+    width: 90%;
+    vertical-align: middle;
+    background-color: transparent;
+    max-height: 80px;
+    padding: 12px 50px 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #999999;
+    border-radius: 0;
+    outline: none;
+    background-image: url('/images/dropdown_arrow_icon_white.svg');
+    background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+    background-size: 15px 15px,
+    5px 5px,
+    2.5em 2.5em;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+  select option:hover, select option:hover {
+    box-shadow: 0 0 10px 100px #666666 inset;
+  }
+  select:focus > option:checked {
+    background: #666666 !important;
+  }
+  select option {
+    color: #fff;
+    background-color: #1a1a1a;
+  }
+}
+
+.error-server {
+  color: rgba(255, 117, 117, 1.0) !important;
+  font-size: 12px;
+  font-weight: bold;
+
+  .fa {
+    margin-right: 5px;
+  }
+}

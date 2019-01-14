@@ -1,0 +1,434 @@
+$label-color: #ed5823;
+$default-color: #ebebeb;
+
+.app-header {
+  &.title-with-image {
+    height: 100px;
+    .ui-title-without-black-bg,
+    .ui-title {
+      background-color: #1A1A1A;
+      line-height: unset;
+      padding-top: 15px;
+
+      .title-coin-icon {
+        width: 50px;
+        margin-left: 20px;
+      }
+      .title-arrow_down-icon {
+        margin-left: 10px;
+        width: 10px;
+      }
+    }
+    .overview-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title-arrow-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .current-coin-label {
+        margin-left: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.transactions-ui {
+  font-family: 'Montserrat-Light', Helvetica, Arial, serif;
+  background-color: #1A1A1A;
+  min-height: calc(100vh - 184px);
+  padding: 50px 26px 0;
+  max-width: 375px;
+  margin: auto;
+  @media only screen and (max-width: 360px) {
+    max-width: 360px;
+    padding: 50px 5px 0;
+  }
+  .coin-address-container {
+    margin-bottom: 30px;
+    .coin-hash {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      line-height: 40px;
+      background-color: #5B5B5B;
+      padding: 3px;
+      .hash-value {
+        background-color: #1A1A1A;
+        display: inline-block;
+        float: left;
+        flex: auto;
+        text-align: center;
+        margin-right: 3px;
+        line-height: 40px;
+      }
+      .copy-hash {
+        background-color: #1A1A1A;
+        width: 42px;
+        float: right;
+        text-align: center;
+        .copy-icon {
+          line-height: 40px;
+          outline: none;
+          text-align: center;
+          width: 100%;
+          img {
+            width: 20px;
+          }
+        }
+        .btn, .copy-icon {
+          outline: none;
+        }
+      }
+    }
+  }
+  .coin-balance-container {
+    margin-bottom: 30px;
+    .coin-balance-value {
+      width: 100%;
+      background-color: #5B5B5B;
+      text-align: center;
+      line-height: 46px;
+    }
+
+    .transaction-coin-details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 3px;
+      font-weight: bold;
+      span {
+        font-weight: normal;
+      }
+      .transaction-coin-balance {
+        line-height: 40px;
+        font-size: 22px;
+        /*&:before {
+          content: "~";
+          position: absolute;
+          left: 50%;
+          margin-left: 10px;
+          font-size: 24px;
+          font-weight: bold;
+          height: 0;
+        }*/
+      }
+
+      .transaction-coin-balance-usd {
+        text-align: center;
+        color: #9B9B9B;
+      }
+    }
+  }
+
+  .latest-transactions-container {
+    margin-bottom: 30px;
+  }
+  .tx-interest {
+    margin-top: -8px;
+    font-size: 13px;
+  }
+
+  .individualportfolio-inner {
+    //width: 375px;
+    position: relative;
+    margin: auto;
+    .qr-code-container {
+      .address-name {
+        color: #9B9B9B;
+      }
+      .receive-qr {
+        width: 100%;
+        position: relative;
+        top: 0;
+        padding: 20px 0 20px;
+        margin-bottom: 30px;
+
+        canvas {
+          border: 10px solid white;
+        }
+      }
+    }
+
+    .navigation {
+      top: 83px;
+      height: 9px;
+      width: 37px;
+      position: absolute;
+      margin: 0;
+      left: 168px;
+    }
+
+    .transactions-list {
+      .item {
+        align-items: center;
+        display: flex;
+        margin-right: 10px;
+        margin-left: 10px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        height: 25px;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .transaction-direction {
+          display: flex;
+          margin-right: 20px;
+          margin-left: 20px;
+          align-items: center;
+          justify-content: flex-start;
+          flex-wrap: nowrap;
+          //width: 65px;
+          font-size: 12px;
+          line-height: 25px;
+          .transaction-arrow {
+            display: block;
+            width: 15px;
+            max-width: 15px;
+            height: auto;
+            margin: 0 7px;
+          }
+        }
+
+        &.received {
+          .direction,
+          .amount-native {
+            color: #fff;
+            font-weight: bold;
+          }
+
+          .transaction-direction {
+          }
+        }
+
+        &.sent {
+          .direction,
+          .amount-native {
+            color: #fff;
+            font-weight: bold;
+          }
+
+          .transaction-direction {
+          }
+        }
+
+        &.unconfirmed {
+          opacity: 0.6;
+          
+          .direction,
+          .amount-native {
+            color: #fff;
+            font-weight: bold;
+          }
+
+          .transaction-direction {
+          }
+        }
+
+        &.self {
+          .direction,
+          .amount-native {
+            color: #fff;
+            opacity: 0.7;
+          }
+
+          .transaction-direction {
+            background-color: #fff;
+            opacity: 0.7;
+          }
+        }
+
+        .direction {
+          text-transform: capitalize;
+        }
+
+        .date {
+          flex-grow: 0;
+          margin-right: 10px;
+          margin-left: 10px;
+          text-align: center;
+        }
+
+        .amount-native {
+          background-color: #1A1A1A;
+          width: 30px;
+          font-size: 14px;
+          margin-right: 20px;
+          margin-left: 20px;
+          height: 21px;
+          line-height: 21px;
+          text-align: center;
+          font-weight: bold;
+        }
+
+        .right-arrow {
+          line-height: 25px;
+          text-align: center;
+          width: 30px;
+          img {
+            max-width: 4px;
+          }
+        }
+      }
+    }
+
+    .combinedshape {
+      top: 44px;
+      height: 15px;
+      width: 21px;
+      position: absolute;
+      margin: 0;
+      left: 19px;
+    }
+  }
+
+  .individualportfolio {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+  }
+}
+
+  .buttons-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+
+    .button-left {
+      width: 50px;
+      margin-right: 30px;
+    }
+    .button-right {
+      width: 50px;
+      margin-left: 30px;
+    }
+    .button-center {
+      width: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .send-receive-block-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+  &.three-btn {
+    width: inherit;
+    max-width: inherit;
+
+    .send-receive-block-inner {
+      button {
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.anim-appear {
+  opacity: 0.04;
+}
+.anim-appear.anim-appear-active {
+  opacity: 2;
+  transition: opacity .3s ease-in;
+}
+
+.overlay-coins-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.overview-panel-coins {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: -16px;
+  font-size: 14px;
+  background-color: #363636;
+  align-items: center;
+  overflow: auto;
+  z-index: 0;
+  height: 100px;
+
+  .overview-panel-coin {
+    flex: 1;
+    margin: 14px 20px 0 0;
+    min-width: 90px;
+
+    &:first-child {
+    }
+
+    &.disabled {
+      display: none;
+    }
+  }
+
+    .btc {
+      height: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      opacity: 0.6;
+
+      &.selected {
+        opacity: 1;
+      }
+
+      .oval4 {
+        height: 32px;
+        width: 32px;
+        margin: 0;
+        border-radius: 50%;
+        border: solid 2px #fff;
+        background: #fff;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+  }
+
+  .panel-bitcoin {
+    text-transform: uppercase;
+    color: $default-color;
+    font-weight: bold;
+
+    &.selected {
+      color: $label-color;
+      font-weight: 600;
+    }
+  }
+}
+
+.load-more-transactions {
+  margin: 0 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

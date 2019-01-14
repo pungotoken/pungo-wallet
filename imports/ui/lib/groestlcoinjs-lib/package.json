@@ -1,0 +1,93 @@
+{
+  "_from": "git://github.com/Groestlcoin/groestlcoinjs-lib.git",
+  "_id": "groestlcoinjs-lib@4.0.2",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/groestlcoinjs-lib",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "groestlcoinjs-lib@git://github.com/Groestlcoin/groestlcoinjs-lib.git",
+    "name": "groestlcoinjs-lib",
+    "escapedName": "groestlcoinjs-lib",
+    "rawSpec": "git://github.com/Groestlcoin/groestlcoinjs-lib.git",
+    "saveSpec": "git://github.com/Groestlcoin/groestlcoinjs-lib.git",
+    "fetchSpec": "git://github.com/Groestlcoin/groestlcoinjs-lib.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git://github.com/Groestlcoin/groestlcoinjs-lib.git#ca17fd206e243b41aa328e2d3aecbc9438e34326",
+  "_spec": "groestlcoinjs-lib@git://github.com/Groestlcoin/groestlcoinjs-lib.git",
+  "_where": "/alex/work-files/client/instak/research/working/mobile-wallet",
+  "bugs": {
+    "url": "https://github.com/groestlcoin/groestlcoinjs-lib/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bech32": "^1.1.2",
+    "bip32grs": "git+https://github.com/Groestlcoin/bip32grs.git",
+    "bip66": "^1.1.0",
+    "bitcoin-ops": "^1.4.0",
+    "bs58grscheck": "git+https://github.com/Groestlcoin/bs58grscheck.git",
+    "create-hash": "^1.1.0",
+    "create-hmac": "^1.1.3",
+    "groestl-hash-js": "git+https://github.com/Groestlcoin/groestl-hash-js.git",
+    "merkle-lib": "^2.0.10",
+    "pushdata-bitcoin": "^1.0.1",
+    "randombytes": "^2.0.1",
+    "safe-buffer": "^5.1.1",
+    "tiny-secp256k1": "^1.0.0",
+    "typeforce": "^1.11.3",
+    "varuint-bitcoin": "^1.0.4",
+    "wifgrs": "git+https://github.com/Groestlcoin/wifgrs.git"
+  },
+  "deprecated": false,
+  "description": "Client-side Groestlcoin JavaScript library",
+  "devDependencies": {
+    "bip39": "^2.3.0",
+    "bip65": "^1.0.1",
+    "bip68": "^1.0.3",
+    "bn.js": "^4.11.8",
+    "bs58": "^4.0.0",
+    "dhttp": "^3.0.0",
+    "hoodwink": "^2.0.0",
+    "minimaldata": "^1.0.2",
+    "mocha": "^5.2.0",
+    "nyc": "^11.8.0",
+    "proxyquire": "^2.0.1",
+    "standard": "^11.0.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "src"
+  ],
+  "homepage": "https://github.com/groestlcoin/groestlcoinjs-lib#readme",
+  "keywords": [
+    "groestlcoinjs",
+    "groestlcoin",
+    "browserify",
+    "javascript",
+    "groestlcoinjs"
+  ],
+  "license": "MIT",
+  "main": "./src/index.js",
+  "name": "groestlcoinjs-lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/groestlcoin/groestlcoinjs-lib.git"
+  },
+  "scripts": {
+    "coverage": "nyc --check-coverage --branches 90 --functions 90 mocha",
+    "coverage-html": "nyc report --reporter=html",
+    "coverage-report": "nyc report --reporter=lcov",
+    "integration": "mocha --timeout 50000 test/integration/",
+    "standard": "standard",
+    "test": "npm run standard && npm run coverage",
+    "unit": "mocha"
+  },
+  "version": "4.0.2"
+}

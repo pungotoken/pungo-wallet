@@ -1,0 +1,94 @@
+.about-ui {
+  background-color: #1A1A1A;
+  font-family: 'Montserrat-Light', Helvetica, Arial, serif;
+  min-height: calc(100vh - 164px);
+  padding: 60px 26px 0;
+  height: 100%;
+  @media only screen and (max-width: 375px) {
+    padding: 60px 5px 0;
+  }
+  .about-inner {
+    margin: 0 auto;
+    max-width: 375px;
+    padding-top: 110px;
+    position: relative;
+    .pungo-logo-container,
+    .powered-by-logo-container {
+      img {
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .img-powered-by {
+        text-align: center;
+        width: 200px;
+        margin-left: 60px;
+        margin-bottom: 20px;
+      }
+    }
+    .pungo-logo-container {
+      position: relative;
+      margin: 0 30px 20px;
+      .app-details {
+        position: absolute;
+        bottom: 30px;
+        right: 0;
+        text-align: right;
+        font-size: 12px;
+        .build {
+          color: #fff;
+          margin-right: 15px;
+        }
+        .version {
+          color: #ed5823;
+        }
+      }
+    }
+    .powered-by-logo-container {
+      margin: 0 30px 40px;
+    }
+    .disclaimer-text {
+      text-transform: uppercase;
+      text-align: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 9px;
+      font-weight: bold;
+      color: #808080;
+      margin-bottom: 20px;
+    }
+    .license-container {
+      color: #808080;
+      font-size: 9px;
+      margin: 0 10px 20px;
+      text-align: center;
+      text-transform: uppercase;
+      .license-logo {
+        align-items: center;
+        color: #fff;
+        display: flex;
+        height: 25px;
+        justify-content: center;
+        margin: 30px auto 50px;
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+    .copyright-container {
+      color: #808080;
+      font-size: 12px;
+      margin: 0 20px 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .note-container {
+      color: #808080;
+      font-size: 11px;
+      margin: 0 20px 20px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,245 @@
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('/fonts/Montserrat-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-ExtraLight';
+  src: url('/fonts/Montserrat-ExtraLight.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
+
+html {
+}
+
+body {
+  font-family: 'Montserrat', Helvetica, Arial, serif;
+  color: white;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#app {
+}
+
+.app-container, .app-main {
+}
+
+.application-pages {
+  background-color: #1a1a1a;
+}
+
+.login-splash-pages {
+   background-color: #F68D1F;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 5px;
+  background: #ccc;
+  z-index: 100;
+}
+
+.dashboard-refresh {
+  position: absolute;
+  top: 115px;
+  right: 13px;
+  z-index: 10;
+  font-size: 20px;
+  display: none;
+}
+
+.section-label {
+  color: #ED512B;
+  font-size: 12px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.error {
+  color: rgba(255, 117, 117, 1.0) !important;
+  font-size: 14px;
+
+  .fa {
+    margin-right: 5px;
+  }
+}
+
+.warning {
+  color: #f2a654;
+  font-size: 14px;
+}
+
+.success {
+  color: rgba(142, 204, 96, 1.0) !important;
+  font-size: 14px;
+
+  .fa {
+    margin-right: 5px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+div[disabled],
+button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.con-error {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 40px;
+
+  .fa {
+    margin-right: 5px;
+  }
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.lh25 {
+  line-height: 25px;
+}
+
+.form {
+  .group3 {
+    position: inherit;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    margin-top: 55px;
+
+    .btn-inner {
+      background-color: #666666;
+      height: 42px;
+      display: inline-block;
+      padding: 0 20px;
+
+      .group2 {
+        margin-top: 12px;
+      }
+      .btn {
+        position: inherit;
+        margin-top: 12px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .disabled-btn {
+        color: #808080;
+      }
+    }
+  }
+}
+
+.group-retry {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .sync-btn-retry {
+    border: 0;
+    color: #fff;
+    margin-top: auto;
+    text-transform: uppercase;
+    display: flex;
+    padding: 0 16px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    height: 46px;
+    outline: none;
+    background-color: #5D5D5D;
+
+    .sync-image-retry {
+      margin-right: 6px;
+      width: 24px;
+      height: 24px;
+      padding-right: 10px;
+    }
+  }
+
+  .btn-inner-retry {
+    height: 42px;
+    display: inline-block;
+  }
+
+  .img-connection-retry {
+    margin: 60px 0 40px 0;
+    width: 100px;
+    height: 150px;
+  }
+  .warning-description-retry {
+    padding: 16px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #F15B29;
+  }
+  .warning-title-retry {
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #F15B29;
+  }
+}
+.sz350 {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  img {
+    vertical-align: middle;
+  }
+}
+
+a {
+  text-decoration: none
+}
+
+div {
+  -webkit-text-size-adjust: none
+}
+
+button {
+  outline: none;
+}
+
+
+
+.splash-gradient-color {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f16124+0,f7931e+100 */
+  background: #f16124; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #f16124 0%, #f7931e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #f16124 0%,#f7931e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f16124 0%,#f7931e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16124', endColorstr='#f7931e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
